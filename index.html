@@ -381,8 +381,8 @@
             <div class="sign-in">
                 <b class="sign-in-text">подпишитесь на рассылку</b>
                 <form >
-                    <input type="email" placeholder="E-mail">
-                    <button type="submit" class="btn-footer-form" autocomplete="on">
+                    <input type="email" name="sign-in" placeholder="E-mail" autocomplete="on">
+                    <button type="submit" class="btn-footer-form">
                         Подписаться
                         <svg class="icon-plane">
                             <use href="./image/icons.svg#icon-plane"></use>
@@ -398,11 +398,45 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="form">
+                <label for="name" class="form-text">Имя</label>
+                <div class="form-div">
+                    <input type="text" id="name" name="Name" class="form-input">
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./image/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+                <label for="phone" class="form-text">Телефон</label>
+                <div class="form-div">
+                    <input type="tel" id="phone" name="tel" class="form-input">
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./image/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                <label for="mail" class="form-text">Почта</label>
+                <div class="form-div">
+                    <input type="email" id="mail" name="mail" class="form-input">
+                    <svg class="icon-form" width="18px" height="18px">
+                        <use href="./image/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+                <label for="textarea" class="form-text">Комментарий</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="6" class="form-textarea" placeholder="Введите текст"></textarea>
+            
+            <label class="form-check-text">
+            <input type="checkbox" name="checkbox" class="checkbox">
+            <span class="icon-checkbox"></span>
+               Соглашаюсь с рассылкой и принимаю
+                <a href="">Условия договора</a>
+            </label>
+            <button type="submit" class="button-hero btn-form">Отправить</button>
             <button type="button" class="btn-modal" data-modal-close>
                 <svg class="close-modal" width="18px" height="18px">
                     <use href="./image/icons.svg#icon-close-modal"></use>
                 </svg>
             </button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
