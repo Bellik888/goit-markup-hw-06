@@ -616,7 +616,6 @@ footer .sign-in {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: rgb(33, 33, 33);
 }
@@ -641,7 +640,7 @@ form {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 1);
+  color: var(--primary-text-color);
 }
 .form-div {
   display: block;
