@@ -687,6 +687,8 @@ form {
   line-height: 1.71;
 }
 .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 .icon-checkbox {
